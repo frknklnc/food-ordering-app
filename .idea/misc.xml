@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable-v24/edittext_arkaplan.xml" value="0.351" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable-v24/layout_arkaplan_detay.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable-v24/layout_arkaplan_detay2.xml" value="0.1715" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable-v24/yemek_card_arkaplan.xml" value="0.1" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/anasayfa_resim.xml" value="0.1505" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/arama_resim.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/bottom_icon_color.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/button_tasarim.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/edittext_arkaplan.xml" value="0.351" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/fab_resim.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/favorite_bos.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/favorite_dolu.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/gradient_arkaplan.xml" value="0.194" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1865" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1825" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1715" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/layout_arkaplan.xml" value="0.1" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/layout_genel_arkaplan.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/selectec_fav_icon.xml" value="0.297" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/drawable/sil_resim.xml" value="0.194" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/font/courgette.xml" value="0.37384615384615383" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/font/roboto_medium.xml" value="0.37384615384615383" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_sepete_eklendi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_sign_in.xml" value="0.35025641025641024" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_sign_up.xml" value="0.35025641025641024" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_signin.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/activity_siparis_animasyon.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_anasayfa.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_google_signin.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_kampanya.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_profil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_sepet.xml" value="0.5" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_sepet_scrool.xml" value="0.3494791666666667" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_signin.xml" value="0.25" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/fragment_yemek_detay.xml" value="0.3494791666666667" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/kampanya_card_tasarim.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/sepet_card_tasarim.xml" value="0.3494791666666667" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/siparis_animasyon.xml" value="0.1" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/layout/yemekler_card_tasarim.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Furkan/Desktop/BitirmeProjesi/app/src/main/res/menu/toolbar_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

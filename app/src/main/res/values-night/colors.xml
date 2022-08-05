@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="anaTuruncu">#1f1f1f</color>
+    <color name="androidBar">#1f1f1f</color>
+    <color name="cerceveTuruncu">#555251</color>
+    <color name="buttonTuruncu">#FFC801</color>
+    <color name="arkaplanRenk">#ffffff</color>
+    <color name="sepetCardRenk">#B3E8E5</color>
+    <color name="yaziRenk">#555251</color>
+    <color name="yaziRenk2">#ffffff</color>
+    <color name="toolbarYaziRenk">#FFC801</color>
+    <color name="yellow">#FFC801</color>
+    <color name="detayArtiEksiArkaplan">#e8e8e8</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="my_value_icon_size">28dp</dimen>
+    <dimen name="design_bottom_navigation_height" >56dp</dimen>
+</resources>
+

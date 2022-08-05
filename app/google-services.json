@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "488814720351",
+    "firebase_url": "https://egitim-680e6-default-rtdb.firebaseio.com",
+    "project_id": "egitim-680e6",
+    "storage_bucket": "egitim-680e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488814720351:android:52db83c457b705be8b72ea",
+        "android_client_info": {
+          "package_name": "com.example.foodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488814720351-h70r3b0lovsgqj0cpf4tmvo26btp5ige.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodapp",
+            "certificate_hash": "c1d9b5e51090b9d6a6d35b89bcdf34e2caaa79d3"
+          }
+        },
+        {
+          "client_id": "488814720351-g5mhd5p4nguj9ujg8hfr91ihab20v77a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVYAlvKPeURsJZk2VCt2tA_BvHs66hAK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488814720351-g5mhd5p4nguj9ujg8hfr91ihab20v77a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488814720351:android:f7a32a3eb69287c18b72ea",
+        "android_client_info": {
+          "package_name": "com.example.kisileruygulamasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488814720351-g5mhd5p4nguj9ujg8hfr91ihab20v77a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVYAlvKPeURsJZk2VCt2tA_BvHs66hAK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488814720351-g5mhd5p4nguj9ujg8hfr91ihab20v77a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
