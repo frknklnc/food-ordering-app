@@ -4,11 +4,13 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodapp.R
 import com.example.foodapp.databinding.KampanyaCardTasarimBinding
 import com.example.foodapp.entity.Kampanya
 import com.example.foodapp.ui.viewmodel.KampanyaFragmentViewModel
+import com.google.android.material.snackbar.Snackbar
 
 class KampanyaAdapter(var mContext: Context,var kampanyaListesi:List<Kampanya>,
                       var viewModel: KampanyaFragmentViewModel)
@@ -19,6 +21,7 @@ class KampanyaAdapter(var mContext: Context,var kampanyaListesi:List<Kampanya>,
         init {
             this.tasarim = tasarim
         }
+
     }
 
 
@@ -33,6 +36,11 @@ class KampanyaAdapter(var mContext: Context,var kampanyaListesi:List<Kampanya>,
         val kampanya = kampanyaListesi.get(position)
         val k = holder.tasarim
         k.kampanyaNesnesi = kampanya
+
+        k.imageViewKampanyaKullan.setOnClickListener {
+            Snackbar.make(it,"Kampanya uygulandı",Snackbar.LENGTH_SHORT).show()
+            Navigation.findNavController(k.imageViewKampanyaKullan).navigate(R.id.kampanyadanSepetGecis)
+        }
 
     }
 

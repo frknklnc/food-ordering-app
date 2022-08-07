@@ -7,12 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="anaTuruncu">#1f1f1f</color>
+    <color name="anaRenk">#1f1f1f</color>
     <color name="androidBar">#1f1f1f</color>
-    <color name="cerceveTuruncu">#555251</color>
-    <color name="buttonTuruncu">#FFC801</color>
+    <color name="cerceveRenk">#555251</color>
+    <color name="buttonSari">#FFC801</color>
     <color name="arkaplanRenk">#ffffff</color>
-    <color name="sepetCardRenk">#B3E8E5</color>
     <color name="yaziRenk">#555251</color>
     <color name="yaziRenk2">#555251</color>
     <color name="toolbarYaziRenk">#FFC801</color>

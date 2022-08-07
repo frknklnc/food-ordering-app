@@ -61,7 +61,7 @@
                             android:text="Sepetim"
                             android:textStyle="bold"
                             android:textColor="@color/toolbarYaziRenk"
-                            android:textSize="26sp"
+                            android:textSize="28sp"
                             tools:layout_editor_absoluteX="91dp"
                             tools:layout_editor_absoluteY="10dp" />
                     </androidx.appcompat.widget.Toolbar>
@@ -126,7 +126,7 @@
                                 android:id="@+id/radioButton3"
                                 android:layout_width="match_parent"
                                 android:layout_height="35dp"
-                                android:buttonTint="@color/buttonTuruncu"
+                                android:buttonTint="@color/buttonSari"
                                 android:fontFamily="@font/roboto_medium"
                                 android:text="Nakit"
                                 android:textColor="@color/yaziRenk" />
@@ -135,7 +135,7 @@
                                 android:id="@+id/radioButton2"
                                 android:layout_width="match_parent"
                                 android:layout_height="35dp"
-                                android:buttonTint="@color/buttonTuruncu"
+                                android:buttonTint="@color/buttonSari"
                                 android:fontFamily="@font/roboto_medium"
                                 android:text="Online kredi kartı"
                                 android:textColor="@color/yaziRenk" />
@@ -144,7 +144,7 @@
                                 android:id="@+id/radioButton"
                                 android:layout_width="match_parent"
                                 android:layout_height="35dp"
-                                android:buttonTint="@color/buttonTuruncu"
+                                android:buttonTint="@color/buttonSari"
                                 android:fontFamily="@font/roboto_medium"
                                 android:text="Kapıda kredi kartı"
                                 android:textColor="@color/yaziRenk" />
@@ -155,7 +155,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:buttonTint="@color/buttonTuruncu"
+                            android:buttonTint="@color/buttonSari"
                             android:text="Zili Çalma"
                             android:textColor="@color/yaziRenk"
                             app:layout_constraintStart_toStartOf="parent"
@@ -246,7 +246,7 @@
                             android:text="Sepeti Onayla"
                             android:textAllCaps="false"
                             android:textColor="@color/toolbarYaziRenk"
-                            android:textSize="16sp"
+                            android:textSize="15.5sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.5"
@@ -256,13 +256,13 @@
                             android:id="@+id/sepetToplamFiyat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
                             android:layout_marginEnd="16dp"
                             android:fontFamily="@font/roboto_medium"
                             android:text="0 ₺"
-                            android:textColor="@color/anaTuruncu"
-                            android:textSize="16sp"
+                            android:textColor="@color/anaRenk"
+                            android:textSize="18sp"
                             android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@+id/buttonSepetiOnayla"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -270,12 +270,12 @@
                             android:id="@+id/textView5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
                             android:layout_marginEnd="8dp"
                             android:fontFamily="@font/roboto_medium"
                             android:text="Sepet Toplamı :"
                             android:textColor="@color/yaziRenk"
-                            android:textSize="17sp"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toTopOf="@+id/buttonSepetiOnayla"
                             app:layout_constraintEnd_toStartOf="@+id/sepetToplamFiyat"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -284,11 +284,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:layout_marginTop="12dp"
                             android:fontFamily="@font/roboto_medium"
                             android:text="Getirme ücreti yok!"
                             android:textColor="@color/yaziRenk"
                             android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/buttonSepetiOnayla"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,7 +34,7 @@
                 android:text="@string/app_name"
                 android:textStyle="bold"
                 android:textColor="@color/toolbarYaziRenk"
-                android:textSize="26sp"
+                android:textSize="28sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="10dp" />
         </androidx.appcompat.widget.Toolbar>
@@ -130,10 +130,9 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
                 android:onClick="@{()-> yemekDetayFragment.anasayfaGecis()}"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewYemekDetay"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/close_resim" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -146,7 +145,8 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/layout_genel_arkaplan"
             android:text="Getirme ücreti yok!"
-            android:textColor="@color/yaziRenk2"
+            android:textColor="@color/anaRenk"
+            app:chipBackgroundColor="@color/detayArtiEksiArkaplan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
@@ -158,7 +158,8 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/layout_genel_arkaplan"
             android:text="25-35 dk"
-            android:textColor="@color/yaziRenk2"
+            app:chipBackgroundColor="@color/detayArtiEksiArkaplan"
+            android:textColor="@color/anaRenk"
             app:layout_constraintStart_toEndOf="@+id/chip4"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
@@ -172,6 +173,7 @@
             android:fontFamily="@font/roboto_medium"
             android:text='@{"Sepete Ekle" + "          ₺" + String.valueOf(yemekNesnesi.yemek_fiyat)}'
             android:textAllCaps="false"
+            android:textSize="15.5sp"
             android:textColor="@color/toolbarYaziRenk"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

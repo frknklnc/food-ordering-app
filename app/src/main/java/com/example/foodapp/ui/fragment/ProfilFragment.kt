@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import com.example.foodapp.MapsActivity
 import com.example.foodapp.R
 import com.example.foodapp.databinding.FragmentProfilBinding
 import com.example.foodapp.login.SignInActivity
@@ -36,26 +37,26 @@ class ProfilFragment : Fragment() {
 
         //val acct = GoogleSignIn.getLastSignedInAccount(requireActivity())
 
-
         val email = firebaseAuth.currentUser!!.email
-        val displayName = firebaseAuth.currentUser!!.email
+        val displayName = firebaseAuth.currentUser!!.displayName
 
         firebaseAuth.currentUser!!.email
-        tasarim.textViewKullanici.text = email + "\n" + displayName
-
-
-        tasarim.buttonCikis.setOnClickListener {
-            firebaseAuth.signOut()
-            val intent = Intent(activity, SignInActivity::class.java)
-            startActivity(intent)
-        }
-
+        tasarim.textViewKullanici.text = email //+ "\n" + displayName
 
         return tasarim.root
     }
 
     fun gecis(){
         Navigation.findNavController(tasarim.buttonKampanya).navigate(R.id.profildenKampanyaGecis)
+    }
+    fun cikis(){
+        firebaseAuth.signOut()
+        val intent = Intent(activity, SignInActivity::class.java)
+        startActivity(intent)
+    }
+    fun konumGecis(){
+        val intent = Intent(activity, MapsActivity::class.java)
+        startActivity(intent)
     }
 
 

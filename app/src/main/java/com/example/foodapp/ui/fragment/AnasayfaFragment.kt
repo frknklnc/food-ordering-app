@@ -79,4 +79,11 @@ class AnasayfaFragment : Fragment() , SearchView.OnQueryTextListener {
         viewModel.yemekleriYukle()
     }
 
+    fun artanFiyat(){
+        viewModel.artanFiyat()
+    }
+    fun azalanFiyat(){
+        viewModel.azalanFiyat()
+    }
+
 }

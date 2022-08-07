@@ -26,7 +26,7 @@
             android:fontFamily="@font/courgette"
             android:text="@string/app_name"
             android:textColor="@color/toolbarYaziRenk"
-            android:textSize="26sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="91dp"
             tools:layout_editor_absoluteY="10dp" />
@@ -114,6 +114,7 @@
         android:layout_marginBottom="48dp"
         android:background="@drawable/button_tasarim"
         android:text="Giriş yap"
+        android:textSize="15.5sp"
         android:textAllCaps="false"
         android:textColor="@color/toolbarYaziRenk"
         app:layout_constraintBottom_toTopOf="@+id/imageGoogle"
@@ -140,11 +141,22 @@
         android:fontFamily="@font/courgette"
         android:text="Foodie'ye hoşgeldiniz!"
         android:textAllCaps="false"
-        android:textColor="@color/anaTuruncu"
+        android:textColor="@color/anaRenk"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
+        app:srcCompat="@drawable/giris_resim" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

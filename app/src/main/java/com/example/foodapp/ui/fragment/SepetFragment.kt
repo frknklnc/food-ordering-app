@@ -17,6 +17,7 @@ import com.example.foodapp.repo.AnimasyonRepository
 import com.example.foodapp.ui.adapter.SepetAdapter
 import com.example.foodapp.ui.viewmodel.SepetFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import java.lang.Exception
 
 @AndroidEntryPoint
 
@@ -78,6 +79,7 @@ class SepetFragment : Fragment() {
         viewModel.sepetiBosalt()
         AnimasyonRepository.animasyon(requireContext(),R.layout.activity_siparis_animasyon)
         Navigation.findNavController(tasarim.imageViewKampanya).navigate(R.id.sepettenAnasayfaGecis)
+        viewModel.yemekleriGetir()
     }
 
     fun gecis(){

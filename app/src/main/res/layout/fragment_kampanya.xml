@@ -44,7 +44,7 @@
                 android:text="Kampanyalar"
                 android:textStyle="bold"
                 android:textColor="@color/toolbarYaziRenk"
-                android:textSize="26sp"
+                android:textSize="28sp"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="10dp" />
         </androidx.appcompat.widget.Toolbar>

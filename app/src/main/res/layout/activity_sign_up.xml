@@ -7,6 +7,17 @@
     android:background="@drawable/gradient_arkaplan"
     tools:context=".login.SignUpActivity">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
+        app:srcCompat="@drawable/giris_resim" />
+
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
@@ -15,7 +26,7 @@
         android:fontFamily="@font/courgette"
         android:text="Foodie'ye hoşgeldiniz!"
         android:textAllCaps="false"
-        android:textColor="@color/anaTuruncu"
+        android:textColor="@color/anaRenk"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +53,7 @@
             android:text="@string/app_name"
             android:textStyle="bold"
             android:textColor="@color/toolbarYaziRenk"
-            android:textSize="26sp"
+            android:textSize="28sp"
             tools:layout_editor_absoluteX="91dp"
             tools:layout_editor_absoluteY="10dp" />
     </androidx.appcompat.widget.Toolbar>
@@ -129,6 +140,7 @@
         android:layout_marginBottom="60dp"
         android:background="@drawable/button_tasarim"
         android:text="Kayıt ol"
+        android:textSize="15.5sp"
         android:textAllCaps="false"
         android:textColor="@color/toolbarYaziRenk"
         app:layout_constraintBottom_toBottomOf="parent"

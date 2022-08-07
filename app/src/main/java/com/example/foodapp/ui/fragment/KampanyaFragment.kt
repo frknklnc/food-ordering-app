@@ -31,6 +31,8 @@ class KampanyaFragment : Fragment() {
             tasarim.kampanyaAdapter = adapter
         }
 
+
+
         return tasarim.root
     }
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -21,6 +21,10 @@ class SepetFragmentViewModel @Inject constructor(var srepo:SepetRepository) : Vi
 
     }
 
+    fun yemekleriGetir(){
+        srepo.sepettekiYemekleriGetir()
+    }
+
     fun sepetYemekleriYukle(){
         srepo.tumSepettekiYemekleriAl(kullanici_adi)
 
@@ -35,6 +39,7 @@ class SepetFragmentViewModel @Inject constructor(var srepo:SepetRepository) : Vi
         for (i in tumYemek!!){
             srepo.sepettenSil(i.sepet_yemek_id,kullanici_adi)
         }
+        srepo.tumSepettekiYemekleriAl(kullanici_adi)
     }
 
 

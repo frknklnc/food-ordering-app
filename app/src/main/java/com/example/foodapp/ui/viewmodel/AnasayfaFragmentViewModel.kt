@@ -33,4 +33,12 @@ class AnasayfaFragmentViewModel @Inject constructor(var yrepo: YemeklerRepositor
 
     }
 
+    fun artanFiyat(){
+        yrepo.artanFiyat()
+    }
+
+    fun azalanFiyat(){
+        yrepo.azalanFiyat()
+    }
+
 }

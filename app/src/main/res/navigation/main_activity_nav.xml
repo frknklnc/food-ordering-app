@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_profil" >
         <action
             android:id="@+id/profildenKampanyaGecis"
-            app:destination="@id/kampanyaFragment" />
+            app:destination="@id/kampanyaFragment"
+            app:popUpTo="@id/profilFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/sepetFragment"
@@ -33,7 +35,12 @@
             app:destination="@id/kampanyaFragment" />
         <action
             android:id="@+id/sepettenAnasayfaGecis"
-            app:destination="@id/anasayfaFragment" />
+            app:destination="@id/anasayfaFragment"
+            app:popUpTo="@id/sepetFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sepetFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
     </fragment>
     <fragment
         android:id="@+id/yemekDetayFragment"
@@ -45,11 +52,19 @@
             app:argType="com.example.foodapp.entity.Yemekler" />
         <action
             android:id="@+id/detaydanAnasayfaGecis"
-            app:destination="@id/anasayfaFragment" />
+            app:destination="@id/anasayfaFragment"
+            app:popUpTo="@id/yemekDetayFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/kampanyaFragment"
         android:name="com.example.foodapp.ui.fragment.KampanyaFragment"
         android:label="KampanyaFragment"
-        tools:layout="@layout/fragment_kampanya"/>
+        tools:layout="@layout/fragment_kampanya">
+        <action
+            android:id="@+id/kampanyadanSepetGecis"
+            app:destination="@id/sepetFragment"
+            app:popUpTo="@id/kampanyaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

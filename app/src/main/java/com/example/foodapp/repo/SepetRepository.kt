@@ -8,6 +8,7 @@ import com.example.foodapp.retrofit.SepetDao
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.lang.Exception
 
 class SepetRepository(var sdao:SepetDao) {
     var sepetYemekListesi: MutableLiveData<List<Sepet>>
@@ -23,19 +24,25 @@ class SepetRepository(var sdao:SepetDao) {
 
     fun tumSepettekiYemekleriAl(kullanici_adi:String) {
         var hashMap = HashMap<String,Sepet>()
+        val other: List<Sepet> = emptyList()
         sdao.sepettekiYemekler(kullanici_adi).enqueue(object : Callback<SepetCevap> {
             override fun onResponse(call: Call<SepetCevap>?, response: Response<SepetCevap>) {
-                val liste = response.body().sepet_yemekler
-                for (i in liste){
-                    if (hashMap.containsKey(i.yemek_adi)){
-                        hashMap.get(i.yemek_adi)!!.yemek_siparis_adet += i.yemek_siparis_adet
+                try {
+                    val liste = response.body().sepet_yemekler
+                    for (i in liste){
+                        if (hashMap.containsKey(i.yemek_adi)){
+                            hashMap.get(i.yemek_adi)!!.yemek_siparis_adet += i.yemek_siparis_adet
 
-                    }else{
-                        hashMap.put(i.yemek_adi,i)
+                        }else{
+                            hashMap.put(i.yemek_adi,i)
+                        }
+
                     }
-
+                    sepetYemekListesi.value = hashMap.values.toList()
+                    Log.e("tumsepet", "${hashMap.values.toList()}")
+                }catch (e:Exception){
+                    Log.e("tumsepet",e.stackTrace.toString())
                 }
-                sepetYemekListesi.value = hashMap.values.toList()
             }
 
             override fun onFailure(call: Call<SepetCevap>?, t: Throwable?) {}
@@ -63,7 +70,12 @@ class SepetRepository(var sdao:SepetDao) {
             override fun onResponse(call: Call<CRUDCevap>?, response: Response<CRUDCevap>) {
                 val basari = response.body().success
                 val mesaj = response.body().message
-                tumSepettekiYemekleriAl(kullanici_adi)
+                try {
+                    tumSepettekiYemekleriAl(kullanici_adi)
+                }catch (e:Exception){
+                    Log.e("sepetsil",e.stackTrace.toString())
+                }
+
             }
 
             override fun onFailure(call: Call<CRUDCevap>?, t: Throwable?) {}

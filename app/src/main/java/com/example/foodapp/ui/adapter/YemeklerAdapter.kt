@@ -43,7 +43,6 @@ class YemeklerAdapter(var mContext : Context,
 
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): YemekCardTasarimTutucu {
         val layoutInflater = LayoutInflater.from(mContext)
         val tasarim:YemeklerCardTasarimBinding = DataBindingUtil.inflate(layoutInflater,
@@ -62,14 +61,6 @@ class YemeklerAdapter(var mContext : Context,
             val gecis = AnasayfaFragmentDirections.yemekDetayGecis(yemek = yemekler)
             Navigation.findNavController(it).navigate(gecis)
         }
-        /*y.cardViewYemek.checkBoxFavori.setOnCheckedChangeListener{checkbox, isChecked ->
-            if (isChecked){
-                Toast.makeText(this, "Tüm alanları doldurun!", Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(this, "Tüm alanları doldurun!", Toast.LENGTH_SHORT).show()
-            }
-        }*/
-
 
 
     }

@@ -34,4 +34,30 @@ class YemeklerRepository(var ydao: YemeklerDao) {
         })
 
     }
+
+    fun artanFiyat(){
+        ydao.tumYemekler().enqueue(object :Callback<YemeklerCevap>{
+            override fun onResponse(call: Call<YemeklerCevap>?, response: Response<YemeklerCevap>){
+                val menu = response.body().yemekler
+
+                val artanFiyat = menu.sortedWith(compareBy { it.yemek_fiyat })
+                yemekListesi.value = artanFiyat
+            }
+            override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
+        })
+    }
+
+    fun azalanFiyat(){
+        ydao.tumYemekler().enqueue(object :Callback<YemeklerCevap>{
+            override fun onResponse(call: Call<YemeklerCevap>?, response: Response<YemeklerCevap>){
+                val menu = response.body().yemekler
+
+                val azalanFiyat = menu.sortedWith(compareBy { it.yemek_fiyat }).reversed()
+                yemekListesi.value = azalanFiyat
+            }
+            override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
+        })
+    }
+
+
 }

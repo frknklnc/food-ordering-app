@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:itemIconSize="@dimen/my_value_icon_size"
-        android:background="@color/anaTuruncu"
+        android:background="@color/anaRenk"
         app:itemIconTint="@drawable/bottom_icon_color"
         app:itemTextColor="@drawable/bottom_icon_color"
         app:layout_constraintBottom_toBottomOf="parent"

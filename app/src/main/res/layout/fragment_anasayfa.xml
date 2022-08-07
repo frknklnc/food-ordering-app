@@ -32,9 +32,9 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/courgette"
                 android:text="@string/app_name"
-                android:textStyle="bold"
                 android:textColor="@color/toolbarYaziRenk"
-                android:textSize="26sp"
+                android:textSize="28sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="91dp"
                 tools:layout_editor_absoluteY="10dp" />
         </androidx.appcompat.widget.Toolbar>
@@ -47,9 +47,64 @@
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
             app:spanCount="2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/layout_genel_arkaplan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAzalanFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/roboto_medium"
+                android:onClick="@{()-> anasayfaFragment.azalanFiyat()}"
+                android:text="Azalan fiyat"
+                android:textColor="@color/anaRenk"
+                app:chipCornerRadius="8dp"
+                app:chipBackgroundColor="@color/detayArtiEksiArkaplan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/courgette"
+                android:text="Yemekler"
+                android:textColor="@color/anaRenk"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/chipAzalanFiyat"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/chipArtanFiyat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipArtanFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/roboto_medium"
+                android:onClick="@{()-> anasayfaFragment.artanFiyat()}"
+                android:text="Artan fiyat"
+                android:textColor="@color/anaRenk"
+                app:chipCornerRadius="8dp"
+                app:chipBackgroundColor="@color/detayArtiEksiArkaplan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

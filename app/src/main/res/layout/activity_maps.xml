@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_genel_arkaplan">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbarProfil"
+        tools:context=".MapsActivity" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/courgette"
+            android:text="Konumum"
+            android:textColor="@color/toolbarYaziRenk"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/buttonKonumaGit"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_tasarim"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Konumu Bul"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKonumuUygula"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_tasarim"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Konumu Uygula"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        map:layout_constraintBottom_toBottomOf="@+id/map"
+        map:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
