@@ -46,7 +46,7 @@ class SepetAdapter(var mContext : Context,
         s.imageViewSepetYemekSil.setOnClickListener {
             Snackbar.make(it,"${sepet.yemek_adi} silinsin mi?",Snackbar.LENGTH_LONG).
             setAction("EVET"){
-                viewModel.sepettenSil(sepet.sepet_yemek_id)
+                viewModel.sepettenSil(sepet.sepet_yemek_id,"user")
             }.setActionTextColor(Color.RED)
                 .setTextColor(Color.BLACK)
                 .setBackgroundTint(Color.WHITE)

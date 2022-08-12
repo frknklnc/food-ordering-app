@@ -40,7 +40,7 @@ class ProfilFragment : Fragment() {
         val email = firebaseAuth.currentUser!!.email
         val displayName = firebaseAuth.currentUser!!.displayName
 
-        firebaseAuth.currentUser!!.email
+        //firebaseAuth.currentUser!!.email
         tasarim.textViewKullanici.text = email //+ "\n" + displayName
 
         return tasarim.root

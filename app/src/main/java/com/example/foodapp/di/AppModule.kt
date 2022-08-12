@@ -54,7 +54,7 @@ class AppModule {
     }
     @Provides
     @Singleton
-    fun provideYemeklerDao(): YemeklerDao{
+    fun provideYemeklerDao() : YemeklerDao{
         return ApiUtils.getYemeklerDao()
     }
 

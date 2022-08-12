@@ -46,11 +46,11 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
             android:background="@drawable/button_tasarim"
-            android:text="Çıkış Yap"
             android:onClick="@{()-> profilFragment.cikis()}"
+            android:text="Çıkış Yap"
             android:textAllCaps="false"
-            android:textSize="15.5sp"
             android:textColor="@color/toolbarYaziRenk"
+            android:textSize="15.5sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -80,9 +80,9 @@
             android:fontFamily="@font/roboto_medium"
             android:onClick="@{()-> profilFragment.gecis()}"
             android:text="Kampanyalarım"
-            android:textSize="15.5sp"
             android:textAllCaps="false"
             android:textColor="@color/yellow"
+            android:textSize="15.5sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -111,14 +111,15 @@
             android:layout_marginEnd="32dp"
             android:background="@drawable/button_tasarim"
             android:fontFamily="@font/roboto_medium"
-            android:text="Konumum"
-            android:textSize="15.5sp"
             android:onClick="@{()-> profilFragment.konumGecis()}"
+            android:text="Konumum"
             android:textAllCaps="false"
             android:textColor="@color/yellow"
+            android:textSize="15.5sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewKullanici" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -30,16 +30,27 @@ class SepetFragmentViewModel @Inject constructor(var srepo:SepetRepository) : Vi
 
     }
 
-    fun sepettenSil(sepet_yemek_id:Int){
+    fun sepettenSil(sepet_yemek_id:Int,kullanici_adi:String){
         srepo.sepettenSil(sepet_yemek_id,kullanici_adi)
+        if (sepetYemekListesi.value!!.size -1 == 0){
+            sepetYemekListesi.value = emptyList()
+        }
+
     }
 
     fun sepetiBosalt(){
-        var tumYemek = sepetYemekListesi.value
-        for (i in tumYemek!!){
-            srepo.sepettenSil(i.sepet_yemek_id,kullanici_adi)
+        val tumYemek = sepetYemekListesi.value!!
+        for (i in tumYemek){
+            sepettenSil(i.sepet_yemek_id,kullanici_adi)
+            if (tumYemek.indexOf(i) == tumYemek.size-1){
+                sepetYemekListesi.value = emptyList()
+                }
+            /*if (sepetYemekListesi.value!!.size -1 == 0){
+                sepetYemekListesi.value = emptyList()
+            }*/
         }
         srepo.tumSepettekiYemekleriAl(kullanici_adi)
+
     }
 
 

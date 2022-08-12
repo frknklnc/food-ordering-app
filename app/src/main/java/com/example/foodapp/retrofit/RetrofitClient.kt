@@ -5,6 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitClient {
     companion object{
+        //cevap metodlarını dönüştürme
         fun getClient(baseUrl:String) : Retrofit{
             return Retrofit.Builder()
                 .baseUrl(baseUrl)

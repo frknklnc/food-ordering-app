@@ -76,10 +76,10 @@ class SepetFragment : Fragment() {
     }
 
     fun sepetiOnayla(){
+
         viewModel.sepetiBosalt()
         AnimasyonRepository.animasyon(requireContext(),R.layout.activity_siparis_animasyon)
         Navigation.findNavController(tasarim.imageViewKampanya).navigate(R.id.sepettenAnasayfaGecis)
-        viewModel.yemekleriGetir()
     }
 
     fun gecis(){
