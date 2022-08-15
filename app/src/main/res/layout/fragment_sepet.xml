@@ -41,6 +41,18 @@
                     app:layout_constraintStart_toStartOf="parent"
                     tools:context=".ui.fragment.SepetFragment">
 
+                    <TextView
+                        android:id="@+id/textViewSepetBos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="150dp"
+                        android:text="sepet boş"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/rvSepet"
+                        app:layout_constraintEnd_toStartOf="@+id/rvSepet"
+                        app:layout_constraintHorizontal_bias="0.503"
+                        app:layout_constraintStart_toEndOf="@+id/rvSepet" />
+
                     <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbarSepet"
                         android:layout_width="0dp"
@@ -59,9 +71,9 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/courgette"
                             android:text="Sepetim"
-                            android:textStyle="bold"
                             android:textColor="@color/toolbarYaziRenk"
                             android:textSize="28sp"
+                            android:textStyle="bold"
                             tools:layout_editor_absoluteX="91dp"
                             tools:layout_editor_absoluteY="10dp" />
                     </androidx.appcompat.widget.Toolbar>
@@ -106,6 +118,7 @@
                             android:inputType="textPersonName"
                             android:padding="8dp"
                             android:textColor="@color/yaziRenk"
+                            android:textCursorDrawable="@color/yaziRenk"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.0"

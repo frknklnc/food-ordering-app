@@ -52,6 +52,12 @@ class SignInActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        tasarim.imageViewPhone.setOnClickListener{
+            val intent = Intent(this, PhoneActivity::class.java)
+            startActivity(intent)
+
+        }
+
         tasarim.button.setOnClickListener {
             val email = tasarim.emailEt.text.toString()
             val sifre = tasarim.passET.text.toString()

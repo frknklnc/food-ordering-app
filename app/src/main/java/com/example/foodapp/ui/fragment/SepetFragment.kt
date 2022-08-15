@@ -38,9 +38,18 @@ class SepetFragment : Fragment() {
         viewModel.sepetYemekleriYukle()
 
         viewModel.sepetYemekListesi.observe(viewLifecycleOwner){
+            /*if (it.isNullOrEmpty()){
+                tasarim.textViewSepetBos.visibility = View.VISIBLE
+                tasarim.rvSepet.visibility = View.INVISIBLE
+            }else{
+                tasarim.textViewSepetBos.visibility = View.INVISIBLE
+            }*/
+
             val adapter = SepetAdapter(requireContext(),it,viewModel)
             tasarim.sepetAdapter = adapter
             tumSepet = viewModel.sepetYemekListesi.value!!
+
+
 
             tasarim.sepetToplamFiyat.text = sepetToplamFiyat(tumSepet,tumSepet.size).toString() + " ₺"
 
@@ -76,10 +85,10 @@ class SepetFragment : Fragment() {
     }
 
     fun sepetiOnayla(){
-
         viewModel.sepetiBosalt()
         AnimasyonRepository.animasyon(requireContext(),R.layout.activity_siparis_animasyon)
         Navigation.findNavController(tasarim.imageViewKampanya).navigate(R.id.sepettenAnasayfaGecis)
+        viewModel.yemekleriGetir()
     }
 
     fun gecis(){

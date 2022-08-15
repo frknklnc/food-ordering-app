@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_arkaplan"
+    tools:context=".login.SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
+        app:srcCompat="@drawable/giris_resim" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/courgette"
+        android:text="Foodie'ye hoşgeldiniz!"
+        android:textAllCaps="false"
+        android:textColor="@color/anaRenk"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAnasayfa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/courgette"
+            android:text="@string/app_name"
+            android:textColor="@color/toolbarYaziRenk"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/otpProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="249dp"
+        android:indeterminateTint="@color/yaziRenk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <Button
+        android:id="@+id/buttonDogrula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_tasarim"
+        android:text="Doğrula"
+        android:textAllCaps="false"
+        android:textColor="@color/toolbarYaziRenk"
+        android:textSize="15.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resendTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:text="Kodu tekrar gönder"
+        android:textColor="@color/yaziRenk"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpEditText1" />
+
+    <EditText
+        android:id="@+id/otpEditText1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/anaRenk"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/otpEditText2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <EditText
+        android:id="@+id/otpEditText2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/anaRenk"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/otpEditText3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otpEditText1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <EditText
+        android:id="@+id/otpEditText3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/anaRenk"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/otpEditText4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otpEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <EditText
+        android:id="@+id/otpEditText4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/anaRenk"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/otpEditText5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otpEditText3"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <EditText
+        android:id="@+id/otpEditText5"
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/anaRenk"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/otpEditText6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otpEditText4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa" />
+
+    <EditText
+        android:id="@+id/otpEditText6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/anaRenk"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/otpEditText5"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAnasayfa"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
