@@ -21,10 +21,10 @@ Bitirme projesi olarak yemek sipariş uygulaması geliştirdim. Google hesabın�
 
 ## Screenshots
 <p align="left">
-<img align="left" src="https://user-images.githubusercontent.com/88112967/188502453-7a420d34-69be-422a-b368-0dd0a6642401.png" width="200" />
-<img align="left" src="https://user-images.githubusercontent.com/88112967/188503015-001238ff-83b7-45d6-9836-d941404256d5.png" width="200" />
-<img align="left" src="https://user-images.githubusercontent.com/88112967/188502455-e0b49945-f832-40c8-be02-fa3135274611.png" width="200" />
-<img align="left" src="https://user-images.githubusercontent.com/88112967/188502457-cbea70fc-67a8-435a-9293-9e2ad7961379.png" width="200" />
+<img align="left" src="https://user-images.githubusercontent.com/88112967/188502453-7a420d34-69be-422a-b368-0dd0a6642401.png" width="200" /><br/>
+<img align="left" src="https://user-images.githubusercontent.com/88112967/188503015-001238ff-83b7-45d6-9836-d941404256d5.png" width="200" /><br/>
+<img align="left" src="https://user-images.githubusercontent.com/88112967/188502455-e0b49945-f832-40c8-be02-fa3135274611.png" width="200" /><br/>
+<img align="left" src="https://user-images.githubusercontent.com/88112967/188502457-cbea70fc-67a8-435a-9293-9e2ad7961379.png" width="200" /><br/>
 <br/>
 <img align="left" src="https://user-images.githubusercontent.com/88112967/188502459-e75f3f87-e4fb-4afd-80c3-30b158f3858d.png" width="200" />
 <img align="left" src="https://user-images.githubusercontent.com/88112967/188502460-6ec3af38-b900-411e-93cf-01ebbc805364.png" width="200" />
