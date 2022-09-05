@@ -29,6 +29,6 @@ Bitirme projesi olarak yemek sipariş uygulaması geliştirdim. Google hesabın�
 <img align="left" src="https://user-images.githubusercontent.com/88112967/188502460-6ec3af38-b900-411e-93cf-01ebbc805364.png" width="200" />
 <img align="left" src="https://user-images.githubusercontent.com/88112967/188502463-38178180-77bb-4991-b2a4-810f00f0181f.png" width="200" />
 <img align="left" src="https://user-images.githubusercontent.com/88112967/188502464-b7c30e9e-8a98-44b8-a46e-7cd42760c0f8.png" width="200" />
+<img align="left" src="https://user-images.githubusercontent.com/88112967/188503065-bd206c74-bca5-470c-a01e-9e3b8712b51c.png" width="200" />
 <img align="left" src="https://user-images.githubusercontent.com/88112967/188502467-b0420e8b-9ab6-4fec-aa61-151517da5b25.png" width="200" />
-<img align="left" src="https://user-images.githubusercontent.com/88112967/188503065-bd206c74-bca5-470c-a01e-9e3b8712b51c.png" />
 </p>
