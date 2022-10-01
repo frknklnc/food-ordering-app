@@ -2,25 +2,17 @@ package com.example.foodapp.ui.fragment
 
 import android.os.Bundle
 import android.view.*
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Transformations
-import androidx.navigation.Navigation
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.foodapp.R
 import com.example.foodapp.databinding.FragmentAnasayfaBinding
-import com.example.foodapp.entity.Yemekler
 import com.example.foodapp.ui.adapter.YemeklerAdapter
 import com.example.foodapp.ui.viewmodel.AnasayfaFragmentViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.yemekler_card_tasarim.*
-import kotlinx.android.synthetic.main.yemekler_card_tasarim.view.*
+
 
 @AndroidEntryPoint
 

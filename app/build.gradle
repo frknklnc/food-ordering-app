@@ -36,6 +36,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.foodapp'
 }
 apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: "kotlin-kapt"
@@ -94,6 +95,9 @@ dependencies {
     //Coroutine
     implementation "androidx.room:room-ktx:2.3.0"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
 
 
 
